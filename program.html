@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Air Deviation Report</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="./plugins/tables/css/datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+        ********************-->
+        <div id="preloader">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+                </svg>
+            </div>
+        </div>
+    <!--*******************
+        Preloader end
+        ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+        ***********************************-->
+        <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+            ***********************************-->
+
+        <!--**********************************
+            Nav header end
+            ***********************************-->
+
+        <!--**********************************
+            Header start
+            ***********************************-->
+            <div class="header">    
+                <div class="header-content">
+
+
+                    <div class="header-left">
+                     <a href="index.html" style="color: #76838f;"><p class="card-title1">AIR DEVIATION REPORT</p></a>
+                 </div>
+                 <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Change Password</span></a>
+                                        </li>
+                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+            ***********************************-->
+
+
+
+        <!--**********************************
+            Content body start
+            ***********************************-->
+            <div class="content-body">
+
+                <div class="row page-titles mx-0">
+                    <div class="col p-md-0">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active"><a href="program.html">Program</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Program
+                                     <div class="form-group header-right">
+                                        <button type="button" class="btn mb-1 btn-rounded btn-primary" data-toggle="modal" data-target="#newProgramModal" data-whatever="@getbootstrap"><span class="btn-icon-left"><i class="fa fa-plus color-success"></i> </span>New Program</button>
+
+                                        <div class="modal fade" id="newProgramModal" tabindex="-1" role="dialog" aria-labelledby="newProgramModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">New Program</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="group-name" class="col-form-label">Program Name*</label>
+                                                                <input type="text" class="form-control" id="group-name">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+
+                                                        <button type="button" class="btn btn-primary">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </h4>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered zero-configuration">
+                                        <thead>
+                                            <tr>
+                                                <th>Topic</th>
+                                                <th>Program Name</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> 
+                                                    1
+                                                </td>
+                                                <td> 
+                                                    METRO MALAM
+                                                </td>
+                                                <td><span class="badge badge-success px-2">Active</span></td>
+                                                <td>
+                                                    <button type="button" class="btn mb-1 btn-rounded btn-warning" data-toggle="modal" data-target="#editProgramModal" data-whatever="@getbootstrap"><i class="fa fa-pencil color-secondary"></i></button>
+
+                                                    <div class="modal fade" id="editProgramModal" tabindex="-1" role="dialog" aria-labelledby="editProgramModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">New Program</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="form-group">
+                                                                            <label for="group-name" class="col-form-label">Program Name*</label>
+                                                                            <input type="text" class="form-control" id="group-name">
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+
+                                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button type="button" class="btn mb-1 btn-rounded btn-danger"><i class="fa fa-trash-o color-secondary"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 
+                                                    2
+                                                </td>
+                                                <td> 
+                                                    PRIME TIME NEWS
+                                                </td>
+                                                <td><span class="badge badge-success px-2">Active</span></td>
+                                                <td>
+                                                    <button type="button" class="btn mb-1 btn-rounded btn-warning"><i class="fa fa-pencil color-secondary"></i></button>
+                                                    <button type="button" class="btn mb-1 btn-rounded btn-danger"><i class="fa fa-trash-o color-secondary"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 
+                                                    3
+                                                </td>
+                                                <td> 
+                                                    SHOWBIZZ
+                                                </td>
+                                                <td><span class="badge badge-success px-2">Active</span></td>
+                                                <td>
+                                                    <button type="button" class="btn mb-1 btn-rounded btn-warning"><i class="fa fa-pencil color-secondary"></i></button>
+                                                    <button type="button" class="btn mb-1 btn-rounded btn-danger"><i class="fa fa-trash-o color-secondary"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+            ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+            ***********************************-->
+            <div class="footer">
+                <div class="copyright">
+                    <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">MIS</a> 2023</p>
+                </div>
+            </div>
+        <!--**********************************
+            Footer end
+            ***********************************-->
+        </div>
+    <!--**********************************
+        Main wrapper end
+        ***********************************-->
+
+    <!--**********************************
+        Scripts
+        ***********************************-->
+        <script src="plugins/common/common.min.js"></script>
+        <script src="js/custom.min.js"></script>
+        <script src="js/settings.js"></script>
+        <script src="js/gleek.js"></script>
+        <script src="js/styleSwitcher.js"></script>
+
+        <script src="./plugins/tables/js/jquery.dataTables.min.js"></script>
+        <script src="./plugins/tables/js/datatable/dataTables.bootstrap4.min.js"></script>
+        <script src="./plugins/tables/js/datatable-init/datatable-basic.min.js"></script>
+
+    </body>
+
+    </html>

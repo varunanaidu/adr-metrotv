@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Air Deviation Report</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="./plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    <!-- Page plugins css -->
+    <link href="./plugins/clockpicker/dist/jquery-clockpicker.min.css" rel="stylesheet">
+    <!-- Color picker plugins css -->
+    <link href="./plugins/jquery-asColorPicker-master/css/asColorPicker.css" rel="stylesheet">
+    <!-- Date picker plugins css -->
+    <link href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- Daterange picker plugins css -->
+    <link href="./plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+    <link href="./plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+        ********************-->
+        <div id="preloader">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+                </svg>
+            </div>
+        </div>
+    <!--*******************
+        Preloader end
+        ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+        ***********************************-->
+        <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+            ***********************************-->
+
+        <!--**********************************
+            Nav header end
+            ***********************************-->
+
+        <!--**********************************
+            Header start
+            ***********************************-->
+            <div class="header">    
+                <div class="header-content">
+
+
+                    <div class="header-left">
+                     <a href="index.html" style="color: #76838f;"><p class="card-title1">AIR DEVIATION REPORT</p></a>
+                 </div>
+                 <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Change Password</span></a>
+                                        </li>
+                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+            ***********************************-->
+
+
+
+        <!--**********************************
+            Content body start
+            ***********************************-->
+            <div class="content-body">
+
+                <div class="row page-titles mx-0">
+                    <div class="col p-md-0">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="report.html">Report Shift</a></li>
+                            <li class="breadcrumb-item active"><a href="new-report.html">New Report</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                   <h4 class="card-title"><img src="images/logo-metro-compact.png" width="50px" height="50px">MCR
+                                    <a href="report.html"><button type="button" class="btn mb-1 btn-rounded btn-warning header-right"><span class="btn-icon-left"><i class="fa fa-arrow-circle-left color-warning"></i> </span>Back</button></a></h4><hr/>
+                                    <div class="basic-form">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label class="m-t-40">Post Date*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="datepicker-autoclose" placeholder="2023-08-09 00:00" readonly="readonly"> <span class="input-group-append"><span class="input-group-text"><i class="mdi mdi-calendar-check"></i></span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="m-t-40">Shift*</label>
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox">
+                                                            <label class="form-check-label">Shift 1</label>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input class="form-check-input" type="checkbox">
+                                                            <label class="form-check-label">Shift 2</label>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input class="form-check-input" type="checkbox">
+                                                            <label class="form-check-label">Shift 3</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Officer In Charge *</label>
+                                                <textarea class="form-control h-150px" rows="6" id=""></textarea>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Content *</label>
+                                                <textarea class="form-control h-150px" rows="12" id=""></textarea>
+                                                <small>1000 character/s remaining</small>
+                                            </div>
+
+
+                                            <div class="form-group header-right">
+                                                <button type="button" class="btn mb-1 btn-rounded btn-primary"><span class="btn-icon-left"><i class="fa fa-send color-success"></i> </span>Publish</button>
+                                            </div>   
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #/ container -->
+            </div>
+        <!--**********************************
+            Content body end
+            ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+            ***********************************-->
+            <div class="footer">
+                <div class="copyright">
+                    <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">MIS</a> 2023</p>
+                </div>
+            </div>
+        <!--**********************************
+            Footer end
+            ***********************************-->
+        </div>
+    <!--**********************************
+        Main wrapper end
+        ***********************************-->
+
+    <!--**********************************
+        Scripts
+        ***********************************-->
+        <script src="plugins/common/common.min.js"></script>
+        <script src="js/custom.min.js"></script>
+        <script src="js/settings.js"></script>
+        <script src="js/gleek.js"></script>
+        <script src="js/styleSwitcher.js"></script>
+
+        <script src="./plugins/moment/moment.js"></script>
+        <script src="./plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+        <!-- Clock Plugin JavaScript -->
+        <script src="./plugins/clockpicker/dist/jquery-clockpicker.min.js"></script>
+        <!-- Color Picker Plugin JavaScript -->
+        <script src="./plugins/jquery-asColorPicker-master/libs/jquery-asColor.js"></script>
+        <script src="./plugins/jquery-asColorPicker-master/libs/jquery-asGradient.js"></script>
+        <script src="./plugins/jquery-asColorPicker-master/dist/jquery-asColorPicker.min.js"></script>
+        <!-- Date Picker Plugin JavaScript -->
+        <script src="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+        <!-- Date range Plugin JavaScript -->
+        <script src="./plugins/timepicker/bootstrap-timepicker.min.js"></script>
+        <script src="./plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+        <script src="./js/plugins-init/form-pickers-init.js"></script>
+
+    </body>
+
+    </html>

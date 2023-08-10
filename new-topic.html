@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Air Deviation Report</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="./plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    <!-- Page plugins css -->
+    <link href="./plugins/clockpicker/dist/jquery-clockpicker.min.css" rel="stylesheet">
+    <!-- Color picker plugins css -->
+    <link href="./plugins/jquery-asColorPicker-master/css/asColorPicker.css" rel="stylesheet">
+    <!-- Date picker plugins css -->
+    <link href="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- Daterange picker plugins css -->
+    <link href="./plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+    <link href="./plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+        ********************-->
+        <div id="preloader">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+                </svg>
+            </div>
+        </div>
+    <!--*******************
+        Preloader end
+        ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+        ***********************************-->
+        <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+            ***********************************-->
+
+        <!--**********************************
+            Nav header end
+            ***********************************-->
+
+        <!--**********************************
+            Header start
+            ***********************************-->
+            <div class="header">    
+                <div class="header-content">
+
+
+                    <div class="header-left">
+                       <a href="index.html" style="color: #76838f;"><p class="card-title1">AIR DEVIATION REPORT</p></a>
+                   </div>
+                   <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Change Password</span></a>
+                                        </li>
+                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+            ***********************************-->
+
+
+
+        <!--**********************************
+            Content body start
+            ***********************************-->
+            <div class="content-body">
+
+                <div class="row page-titles mx-0">
+                    <div class="col p-md-0">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="adr.html">ADR</a></li>
+                            <li class="breadcrumb-item active"><a href="new-topic.html">New Topic</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                 <h4 class="card-title">New Topic
+                                    <a href="adr.html"><button type="button" class="btn mb-1 btn-rounded btn-warning header-right"><span class="btn-icon-left"><i class="fa fa-arrow-circle-left color-warning"></i> </span>Back</button></a></h4>
+                                    <br/><hr/>
+                                    <div class="basic-form">
+                                        <form>
+                                            <div class="form-group">
+                                                <label class="m-t-40">Dept. Concern *</label> <br/>
+                                                <div style="margin-left: 25px;">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">MIS</label>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">Technical</label>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">Programming</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label class="m-t-40">Topic *</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="m-t-40">Post Date*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="datepicker-autoclose" placeholder="2023-08-09 00:00" readonly="readonly"> <span class="input-group-append"><span class="input-group-text"><i class="mdi mdi-calendar-check"></i></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="m-t-40">Programs *</label> <br/>
+                                                <div style="margin-left: 25px;">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">METRO MALAM</label>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">PRIME TIME NEWS</label>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">SHOWBIZZ</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label>Officer In Charge *</label>
+                                                    <textarea class="form-control h-150px" rows="12" id=""></textarea>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>Content *</label>
+                                                    <textarea class="form-control h-150px" rows="12" id=""></textarea>
+                                                    <small>1000 character/s remaining</small>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label>Attachment/s <p style="color: red;">(Maximum file size allowed 2 Mb, With extension allowed *.jpeg, *.jpg, *.png, *.doc, *.docx, *.pdf)</p></label>
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <div class="input-group">
+                                                        <div class="upload-btn-wrapper">
+                                                             <button type="button" class="btn mb-1 btn-rounded btn-info"><i class="fa fa-plus color-primary"></i></button>
+                                                        <input type="file" name="myfile" />
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <div class="input-group">
+                                                        <div class="upload-btn-wrapper">
+                                                             <button type="button" class="btn mb-1 btn-rounded btn-info"><i class="fa fa-plus color-secondary"></i></button>
+                                                        <input type="file" name="myfile" />
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <div class="input-group">
+                                                        <div class="upload-btn-wrapper">
+                                                             <button type="button" class="btn mb-1 btn-rounded btn-info"><i class="fa fa-plus color-secondary"></i></button>
+                                                        <input type="file" name="myfile" />
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                          <div class="form-group header-right">
+                                            <button type="button" class="btn mb-1 btn-rounded btn-primary"><span class="btn-icon-left"><i class="fa fa-send color-success"></i> </span>Publish</button>
+                                        </div>   
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+            ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+            ***********************************-->
+            <div class="footer">
+                <div class="copyright">
+                    <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">MIS</a> 2023</p>
+                </div>
+            </div>
+        <!--**********************************
+            Footer end
+            ***********************************-->
+        </div>
+    <!--**********************************
+        Main wrapper end
+        ***********************************-->
+
+    <!--**********************************
+        Scripts
+        ***********************************-->
+        <script src="plugins/common/common.min.js"></script>
+        <script src="js/custom.min.js"></script>
+        <script src="js/settings.js"></script>
+        <script src="js/gleek.js"></script>
+        <script src="js/styleSwitcher.js"></script>
+
+        <script src="./plugins/moment/moment.js"></script>
+        <script src="./plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+        <!-- Clock Plugin JavaScript -->
+        <script src="./plugins/clockpicker/dist/jquery-clockpicker.min.js"></script>
+        <!-- Color Picker Plugin JavaScript -->
+        <script src="./plugins/jquery-asColorPicker-master/libs/jquery-asColor.js"></script>
+        <script src="./plugins/jquery-asColorPicker-master/libs/jquery-asGradient.js"></script>
+        <script src="./plugins/jquery-asColorPicker-master/dist/jquery-asColorPicker.min.js"></script>
+        <!-- Date Picker Plugin JavaScript -->
+        <script src="./plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+        <!-- Date range Plugin JavaScript -->
+        <script src="./plugins/timepicker/bootstrap-timepicker.min.js"></script>
+        <script src="./plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+        <script src="./js/plugins-init/form-pickers-init.js"></script>
+
+    </body>
+
+    </html>
